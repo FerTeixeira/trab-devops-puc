@@ -11,5 +11,3 @@ async def root():
 async def funcaoteste():
     """Rota de teste que retorna status e número."""
     return {"teste": "deu certo"}
-
-
