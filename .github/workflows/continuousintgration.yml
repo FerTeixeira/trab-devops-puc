@@ -21,7 +21,7 @@ jobs:
       - name: Instalar dependências
         run: |
           python -m pip install --upgrade pip
-          pip install pylint
+          pip install pylint fastapi
 
       - name: Rodar Pylint
         run: |
