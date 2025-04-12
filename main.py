@@ -1,6 +1,3 @@
-"""Exemplo básico de API FastAPI com duas rotas."""
-
-import random
 from fastapi import FastAPI
 
 app = FastAPI()
