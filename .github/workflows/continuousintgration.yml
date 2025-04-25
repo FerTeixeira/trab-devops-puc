@@ -20,6 +20,3 @@ jobs:
       - name: Rodar Pylint
         run: |
           pylint main.py || true
-      
-
-
