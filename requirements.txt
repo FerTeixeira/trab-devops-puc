@@ -1,2 +1,6 @@
 fastapi[standard]
 pylint
+pydantic~=2.8.2
+pytest
+pytest-cov
+pytest-asyncio
