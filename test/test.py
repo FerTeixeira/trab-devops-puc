@@ -41,3 +41,33 @@ async def test_delete_estudante_negativo():
 async def test_delete_estudante_positivo():
     result = await delete_estudante(5)
     assert result
+
+@pytest.mark.asyncio
+async def test_somar():
+    result = await somar(2, 3)
+    assert result == {"resultado": 5}
+
+@pytest.mark.asyncio
+async def test_subtrair():
+    result = await subtrair(10, 4)
+    assert result == {"resultado": 6}
+
+@pytest.mark.asyncio
+async def test_multiplicar():
+    result = await multiplicar(3, 5)
+    assert result == {"resultado": 15}
+
+@pytest.mark.asyncio
+async def test_dividir_normal():
+    result = await dividir(8, 2)
+    assert result == {"resultado": 4.0}
+
+@pytest.mark.asyncio
+async def test_dividir_por_zero():
+    result = await dividir(5, 0)
+    assert result == {"erro": "Divisão por zero não é permitida"}
+
+@pytest.mark.asyncio
+async def test_dobro():
+    result = await dobro(7)
+    assert result == {"resultado": 14}
